@@ -1,4 +1,4 @@
-let textnumbers="5!";
+let textnumbers="10!";
 
 let numbertest=textnumbers.split("!");
 
