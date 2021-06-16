@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article{
+            border: .4rem solid aqua;
+            border-radius: 1rem;
+            margin: 1rem;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h3>Exploring DOM</h3>
+            <article>
+                <h3>article-1</h3>
+                <p class="author">Author-1</p>
+                <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi non, ab rerum assumenda dolorum natus provident, dolores placeat, consectetur deserunt vitae illum soluta debitis beatae odit ipsam excepturi tempora. Beatae!</p>
+            </article>
+            <article class="special">
+                <h3>article-2</h3>
+                <p class="author">Author-2</p>
+                <p class="description">Voluptatibus, iste consequatur nostrum nemo dolorem voluptatem quae dolore sapiente. Aut voluptate minima qui maiores recusandae reprehenderit atque incidunt optio nihil cum voluptatibus animi, eum sapiente quis. Velit, perspiciatis sequi!</p>
+            </article>
+            <article class="special">
+                <h3>article-3</h3>
+                <p class="author">Author-3</p>
+                <p class="description">Odit veniam ullam eligendi deleniti molestiae dolor fuga eius unde accusamus tempora! Mollitia, minima a error officiis velit vel eos amet sed laborum quasi, in soluta, eum odio. Voluptate, quisquam.</p>
+            </article>
+        </section>
+    </main>
+    <script>
+        var authors=document.querySelectorAll('.special h3');
+        for (let i = 0;  i< authors.length; i++) {
+             let element=authors[i];
+             element.innerHTML="lekhok - "+ (i+1);
+             element.style.color="blue";
+        }
+    </script>
+</body>
+</html>
